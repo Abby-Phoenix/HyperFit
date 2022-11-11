@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign-Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Abby Phoenix">
+        <meta http-equiv="refresh" content="300">
+        <link href="Styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet"> 
+        <style>
+            body {
+              background-image: url('CodeAlong\background-form.avif');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+            </style>
+<style>
+@keyframes head-change {
+    0%   {color: white;}
+    25%  {color: teal;}
+    50%  {color: purple;}
+    75%  {color: darkorchid;}
+    100% {color: rgb(0, 255, 0);}
+  }
+  .form-header {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation-name: head-change;
+    animation-duration: 10s;
+    animation-iteration-count: 10;
+ }
+</style>
+
+    </head>                                     <!--^End of Head Section^-->
+<body>
+    <div class="nav-bar">
+        <ul class="navlinks"> 
+            <ul class="navlinks"> 
+                <li><a href="C:\Users\User\Documents\CodeAlongWk5\CodeAlong\1.Home.html" target="_blank">Home</a></li>
+        <li><a href="C:\Users\User\Documents\CodeAlongWk5\CodeAlong\2.Custom-Plans.html" target="_blank">Custom Plans</a></li>
+        <li><a href="C:\Users\User\Documents\CodeAlongWk5\CodeAlong\3.SocialMedia.html" target="_blank">Social Media</a></li>
+        <li><a href="C:\Users\User\Documents\CodeAlongWk5\CodeAlong\4.Contact.html" target="_blank">Contact</a></li>
+        <div class="logo"><h1>HYPER FIT</h1></div>
+               </ul>
+ 
+        
+    </div>                                       <!--^Nav Bar Code^-->
+
+    
+      <body class="form-body">
+        <h1 class="form-header">Register to recieve email updates and recieve your exercise plan!</h1>
+
+        <form method="post" action='https://register-demo.freecodecamp.org'>
+          <fieldset>
+            <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+            <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+          </fieldset>
+          <fieldset>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+            <label for="terms-and-conditions" name="terms-and-conditions">
+              <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the T&C's(please see below link)</label>
+              <a  id="link-center" href="C:\Users\User\Documents\CodeAlongWk5\CodeAlong\1.Home.html">Terms & Conditions</a>
+            
+          </fieldset>
+          <fieldset>
+            <label for="profile-picture">Upload a profile picture: </label><input id="profile-picture" type="file" name="file" />
+            <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+            <label for="referrer">How did you hear about us?
+              <select id="referrer" name="referrer">
+                <option value="">(select one)</option>
+                <option value="1">Facebook</option>
+                <option value="2">YouTube</option>
+                <option value="3">LinkedIn</option>
+                <option value="4">Other Social Media</option>
+              </select>
+            </label>
+            <label for="bio">Provide a bio for our personal trainers to send you relevant information:
+              <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I love running/ spin class but hate weight-lifting ect."></textarea>
+            </label>
+          </fieldset>
+          <input class="submit" type="submit" value="Submit" />
+        </form>
+      </body>
+    </html>
