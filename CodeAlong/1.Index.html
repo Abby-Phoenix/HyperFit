@@ -14,16 +14,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-         <!--^put background in CSS and remove repeated google font links^-->
     </head>                                     <!--^End of Head^-->
 
     <nav>                                       <!--Add semantic tags to body-->
    <div class="nav-bar">
     <ul class="navlinks">  
-        <li><a href="CodeAlong\1.Index.html" target="_self">Home</a></li>
-        <li><a href="CodeAlong\2.Custom-Plans.html" target="_self">Custom Plans</a></li>
-        <li><a href="CodeAlong\3.Contact.html" target="_self">Contact</a></li>
-        <li><a href="CodeAlong\4.Social Media.html" target="_self">Social Media</a></li>
+        <li><a href=".\1.Index.html" target="_self">Home</a></li>
+        <li><a href=".\2.Custom-Plans.html" target="_self">Custom Plans</a></li>
+        <li><a href=".\3.Contact.html" target="_self">Contact</a></li>
+        <li><a href=".\4.Social Media.html" target="_self">Social Media</a></li>
         <div class="logo"><h1>HYPER FIT</h1></div>
     </ul>
    </div>                                       <!--^Nav Bar Code^-->
@@ -33,11 +32,12 @@
 
     <div class="header"><h1>~About Hyperfit~</h1></div>
 
-    <div class="image-block">
+    <div class="image-div">
         <img class="header-image" src="C:\Users\User\Documents\CodeAlongWk5\CodeAlong\home-initial-img.avif" alt="Selfie Time">
     </div>
 
     <h2 class="h2">At Hyperfit we are all about Fitness!</h2>
+
     <div class="info">
     <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Curabitur ut eros a mauris pulvinar malesuada fermentum sed ex.
@@ -63,17 +63,21 @@
     </div>
 
     <div class="photo-gallery">
-        <img id="photo-gallery1" src="C:\Users\User\Documents\CodeAlongWk5\CodeAlong\home-img-1.avif" alt="Strenth and conditioning workouts">
-        <img id="photo-gallery2" src="C:\Users\User\Documents\CodeAlongWk5\CodeAlong\home-img-3.avif" alt="Exercise at your pace">
-        <img id="photo-gallery3" src="C:\Users\User\Documents\CodeAlongWk5\CodeAlong\home-img-2.avif" alt="Motivation">
-    </div><!--^wrap these in articles and remove aside element to create captions for photos then style the captions in css^-->
-    <aside></aside>
-    <div class="Captions">
-<p class="aside-menu">Strength and Conditioning workouts! 🏋️‍♂️</p>
-<p class="aside-menu">Exercise at your own pace! 🏃‍♀️</p>
-<p class="aside-menu">Stay Motivated! 😊</p>
+        <article class="captions">
+            <img id="photo-gallery1" src="C:\Users\User\Documents\CodeAlongWk5\CodeAlong\home-img-1.avif" alt="Strenth and conditioning workouts">
+            <figcaption>Strength & Conditioning workouts! 🏋️‍♂️</figcaption>
+        </article>
 
-    </div></aside>
+        <article class="captions">
+            <img id="photo-gallery2" src="C:\Users\User\Documents\CodeAlongWk5\CodeAlong\home-img-3.avif" alt="Exercise at your pace">
+            <figcaption>Exercise at your own pace! 🏃‍♀️</figcaption>
+        </article>
+
+        <article class="captions">
+            <img id="photo-gallery3" src="C:\Users\User\Documents\CodeAlongWk5\CodeAlong\home-img-2.avif" alt="Motivation">
+            <figcaption>Stay Motivated! 😊</figcaption>
+        </article>
+    </div>
 
     
 
