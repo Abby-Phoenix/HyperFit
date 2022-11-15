@@ -1,7 +1,14 @@
+body {  
+  background-image: url('5.Background.avif');   
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .logo{
   font-family: 'Permanent Marker', cursive;
     text-align: right;
-    color: orangered;
+    color: white;
 }
 
 .image-block {
