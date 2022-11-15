@@ -4,11 +4,18 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+.nav-bar{
+margin-left: -40px;
+margin-top: -50px;
+}
 
 .logo{
   font-family: 'Permanent Marker', cursive;
-    text-align: right;
-    color: white;
+    text-align: left;
+}
+
+.logo> h1{
+  color: orangered;
 }
 
 .image-block {
@@ -28,29 +35,37 @@ ul{
     width: 100%;
 }
 
-a{
+li> a:hover {
+    color: aqua;
+    border-bottom: 2px solid rgb(2, 252, 23);
+    text-shadow: 3px 6px 5px orangered;
+    color: white;
+}
+a:active{
+    color:rgb(2, 252, 23);
+}
+a {
+  float: left;
+    color:white;
+    font-size: x-large;
+    padding-left: 50px;
+    padding-right: 3%;
+    padding-top: 25px;
+    cursor: pointer;
     text-decoration: none;
     color:white;
     height: 50px;
 }
 
-a:hover{
-    color: aqua;
-    border-bottom: 3px solid white;
-    text-shadow: 3px 6px 5px orangered;
-    color: white;
+.captions {
+  text-align: center;
+  color: white;
+  font-size: larger;
 }
-a:active{
-    color:greenyellow;
-}
-a{
-  float: left;
-    color:white;
-    font-size: x-large;
-    padding-left: 25px;
-    padding-right: 3%;
-    padding-top: 25px;
-    cursor: pointer;
+
+figcaption {
+  padding-top: 1em;
+  font-weight: 900;
 }
 
 h1{
@@ -68,20 +83,20 @@ h1{
 
 h2{
     text-align: center;
-    color: white;
+    color: orangered;
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
-    text-shadow: 1px 2px 5px orangered; ;
 }
-p{
+#p1, #p2{
     text-align: left;
     color: white;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 40%;
     padding: 20px 20px;
     border-radius: 10px;
+    border: 1px solid orangered;
     font-size: 20px;
-    background-color: rgba(236, 28, 191, 0.25);
+    background-color: rgba(247, 96, 9, 0.25);
 }
 .footer{
     display: flex;
@@ -95,48 +110,14 @@ p{
 }
 
 
-.logo-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 750px;
-}
-
-.bubbles{
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid purple;
-    border-radius: 50%;
-    height: 30vh;
-    width: 30vh;
-    background-color: rgba(0, 255, 255, 0.493);
-    margin-left: 5%;
-}
-
-#icons{
-    color: black;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-right: 15px;
-}
-#icons:hover{
-    color:white;
-    border: none;
-}
-
 
 
 .photo-gallery{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-around;
     flex-wrap: wrap;
     max-width: 100%;
-    padding-top: 20px;
+    padding-top: 1em;
     height: 300px;
     margin-bottom: 10vh;
 }
@@ -175,31 +156,14 @@ border-radius: 30px 1px;
     box-shadow: 10px 10px 5px aqua;
       }
 
-.Captions{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.aside-menu{
-  border: 2px solid grey;
-  border-radius: 30px 10px;
-  background-color: rgba(16, 31, 100, 0.685)
-}
-.aside-menu:hover{
-border:2px solid aqua;
-border-radius: 30px 10px;
-background-color:transparent;
-
-}
-
       .autobiography-gallery{
         display: flex;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
         min-width: 100%;
       }
-      #marquee{
+      #Custom-plans-gallery{
         border-radius: 10px;
         height: 300px;
       }
@@ -209,11 +173,12 @@ background-color:transparent;
         align-items: flex-start;
         flex-wrap: wrap;
         width: 100%;
+        margin-bottom: 5vh;
       }
       .auto-paragraphs{
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: white;
-        width: 100%;
+        width: 90%;
         font-size: 20px;
         border: none;
         text-align:start;
@@ -223,21 +188,29 @@ background-color:transparent;
         margin-left: 40px;
         border-bottom: 2px solid white;
       }
+
       /* Form CSS */
 
+      .form-header{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-bottom: 3px solid rgb(0, 255, 242);
+        width: 80%;
+      }
 
-#link-center{
-  text-align: center;
-}
+      #link-center{
+        text-align: center;
+       }
 
       .form-body {
         width: 100%;
         height: 100vh;
         margin: 0;
-        background-image: linear-gradient(to right, rgb(236, 28, 191), yellow);
         color: white;
         font-family: Tahoma;
         font-size: 16px;
+      }
+      .first-fieldset{
+        margin-top: -1em;
       }
       
       h1, p {
@@ -257,7 +230,7 @@ background-color:transparent;
       fieldset {
         border: none;
         padding: 2rem 0;
-        border-bottom: 3px solid #3b3b4f;
+        border-bottom: 3px solid rgb(2, 244, 252);
       }
       
       fieldset:last-of-type {
@@ -269,7 +242,11 @@ background-color:transparent;
         margin: 0.5rem 0;
       }
       #terms-and-conditions{
-        text-align: left;
+        text-align: center;
+      }
+      #link-center{
+        display: flex;
+        justify-content: center;
       }
       
       input,
@@ -279,15 +256,21 @@ background-color:transparent;
         width: 100%;
         min-height: 2em;
         color: white;
-        background-color: purple;
+        background-color: black;
         border-radius: 10px;
         font-size:larger;
       }
       
       input, textarea {
-        background-color: purple;
-        border: 1px solid white;
+        background-color: black;
+        border: 1px solid rgb(2, 252, 23);
         color: white;
+      }
+      input:hover, textarea:hover {
+        border: 1px solid purple;
+      }
+      input:active, textarea:active {
+        border: 1px solid purple;
       }
       
       .inline {
@@ -302,11 +285,55 @@ background-color:transparent;
         margin: 1em auto;
         height: 2em;
         font-size: 1.1rem;
-        background-color: rgb(15, 127, 231);
-        border-color: white;
+        background-color: orangered;
+        border-color: black;
         min-width: 300px;
+      }
+      input[type="submit"]:hover {
+        border: 1px solid white;
+      }
+      ::placeholder{
+  color: white;
       }
       
       input[type="file"] {
         padding: 1px 2px;
       }
+
+     /*Social Media Page CSS*/
+
+      .logo-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 750px;
+        border: none;
+    }
+    
+    .bubbles{
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid orangered;
+        border-radius: 50%;
+        height: 30vh;
+        width: 30vh;
+        background-color: rgba(0, 174, 255, 0.199);
+        margin-left: 5%;
+    }
+    
+    #icons{
+        color: orangered;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1em;
+    }
+    #icons:hover{
+        color:white;
+        
+    }
+    
