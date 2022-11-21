@@ -1,0 +1,52 @@
+body {   
+    background-color: darkcyan;
+  }
+.navbar-brand{
+    font-family: 'Permanent Marker';
+}
+
+.navbar-header:hover{
+  background-color: orangered;
+}
+
+.img-thumbnail{
+    height:400px;
+    border-radius: 10px;
+}
+.col-sm-4{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(8, 187, 241, 0.342);
+}
+.col-sm-4:hover{
+    border: 1px solid orangered;
+    border-radius: 10px;
+    background-color: rgb(8, 136, 241);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    border-top:1px solid white;
+    color: white;
+    height: 45px;
+    width: 100%;
+    padding-top: 25px;
+    background-color: rgba(100,100,100,0.25);
+}
+h1, h2, p, ol, li{
+    color: white;
+}
+h2{
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#description{
+    text-align: center;
+    font-size: 26px;
+}
+
+.btn-block{
+    margin-bottom: 10px;
+    background-color: orangered;
+}
