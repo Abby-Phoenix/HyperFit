@@ -17,6 +17,7 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     background-color: rgba(8, 187, 241, 0.342);
+    height: 100%;
 }
 .col-sm-4:hover{
     border: 1px solid orangered;
@@ -43,10 +44,16 @@ h2{
 
 #description{
     text-align: center;
-    font-size: 26px;
+    font-size: 1em;
 }
 
 .btn-block{
     margin-bottom: 10px;
     background-color: orangered;
+}
+#price{
+    text-align: center;
+    padding-bottom: 2em;
+    font-size: larger;
+    font-weight: bolder;
 }
